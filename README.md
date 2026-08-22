@@ -1,17 +1,20 @@
-# Penetration Testing & Digital Forensics Incident Response (DFIR)
+# Movie Recommendation Expert System (SWI-Prolog)
 
-A practical cybersecurity project focusing on web application vulnerability assessment (Penetration Testing) and incident response methodologies based on industry standards.
+An artificial intelligence expert system developed using **SWI-Prolog** to provide personalized movie recommendations based on user preferences, current mood, viewing history, and local cinema logistics. 
 
-## 🚀 Key Modules & Tasks
-* **Part 1: Web Application Penetration Testing**
-  * Conducted vulnerability assessment on a target banking application login portal.
-  * Successfully exploited a **SQL Injection (SQLi)** vulnerability on username and password input fields to bypass authentication mechanisms.
-  * Performed risk rating, impact analysis (Confidentiality & Integrity compromise), and provided industry-standard mitigation strategies (Prepared Statements and Input Sanitization).
-* **Part 2: Digital Forensics and Incident Response (DFIR)**
-  * Explored volatility concepts (RAM vs. Hard Disk storage analysis).
-  * Built and analyzed attack timelines to map out unauthorized network connections and security breaches.
-  * Implemented and documented the **NIST Incident Response Life Cycle** (Preparation, Detection & Analysis, Containment/Eradication/Recovery, and Post-Incident Activity).
+## 🚀 Key Features & AI Logic
+* **Inference Engine & Backtracking:** Leverages Prolog's built-in backtracking mechanism to search through a structured knowledge base (`movie/5` facts) until matching constraints are fully satisfied.
+* **Constraint Filtering:** Simultaneously evaluates multiple parameters including **Genre, Duration, Mood, and Star Ratings (4.5+)**.
+* **Logical Negation & History Tracking:** Implements recursive rules (`watched/1` and negation `\+`) to dynamically exclude previously viewed movies from recommendations during the user session.
+* **Control & Cut Operators:** Utilizes the Prolog cut operator (`!`) to optimize the search process and ensure concise, single-best recommendations.
+* **Cinema Logistics Mapping:** Bridges content selection with physical availability by linking movie titles to local cinema chains (Empire, AMC, and MUVI Cinemas).
+* **Robust Menu Loop:** Employs recursive state-like menu structures (`run_main_menu/1`) to handle continuous user interactions and input validation without system crashes.
 
-## 🛠️ Tools & Frameworks
-* **Assessment Targets:** Altoro Mutual Bank testing environment.
-* **Methodologies:** NIST SP 800-61 Revision 2 Incident Response Framework, OWASP Top 10 guidelines for SQL Injection mitigation.
+## 🛠️ Tech Stack & Concepts
+* **Language:** SWI-Prolog
+* **Paradigms:** Logic Programming, Artificial Intelligence, Expert Systems
+* **Key Constructs:** Facts, Rules, Recursion, Lists, Cut (`!`), Logical Negation (`\+`), Backtracking
+
+## 📂 Project Structure
+* `movie_system.pl` - Complete Prolog source code containing the knowledge base (facts), recommendation rules, and interactive menu loop.
+* `ARTI106 Project.pdf` - Comprehensive academic report detailing system objectives, architecture, and testing results.
